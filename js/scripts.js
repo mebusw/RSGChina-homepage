@@ -1,1 +1,1 @@
-// Empty JS for your own code to be here
+document.getElementById("theYear").innerText = new Date().getFullYear()
