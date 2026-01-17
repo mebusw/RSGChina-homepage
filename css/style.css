@@ -4,7 +4,7 @@
 
 body {
     min-height: 75rem;
-    padding-top: 4.5rem;
+    padding-top: 3.5rem;
 }
 
 .bd-placeholder-img {
@@ -1018,18 +1018,18 @@ td
 	color: #F3F3F3;
 }
 
-.scrum-navy-bg {
+.bg-scrum-navy {
 	background-color: #182340;
 }
-.scrum-blue-bg {
+.bg-scrum-blue {
 	background-color: #375EDF;
 }
-.light-blue-bg {
+.bg-light-blue {
 	background-color: #A4D5EB;
 }
-.gray-bg {
+.bg-gray {
 	background-color: #D1D3D9;
 }
-.off-white-bg {
+.bg-off-white {
 	background-color: #F3F3F3;
 }
