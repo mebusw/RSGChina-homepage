@@ -50,8 +50,10 @@
         <div class="bg-light rounded-3" style="position: relative;">
             <img loading="lazy" alt="RSG-banner"
                 src="./media/website-hero-banners/Shanghai hero banner with overlay effect.jpg" style="width: 100%;">
-            <img loading="lazy" alt="RSG-bar" src="./media/visual-elements/bar below the hero banner.png"
-                style="width: 100%; position: absolute; bottom: 0; left: 0;">
+            <div class="scrolling-banner"
+                style="width: 100%; position: absolute; bottom: 0; left: 0; height: 35px; background-color: #e8f4f8; overflow: hidden; display: flex; align-items: center;">
+                <div class="scrolling-text" style="white-space: nowrap; animation: scroll 20s linear infinite;"></div>
+            </div>
             <div class="text-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                 <h1 class="text-white mb-2" style="font-size: 3rem; font-weight: 700;">Regional Scrum Gathering®</h1>
                 <h2 class="text-white mb-4" style="font-size: 4rem; font-weight: 700;">SHANGHAI</h2>
@@ -101,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-4 align-items-md-stretch">
+        <!-- <div class="row mb-4 align-items-md-stretch">
             <div class="col-md-12">
                 <h2 class="text-center">大会安排</h2>
                 <p class="text-center">
@@ -114,21 +116,21 @@
                     企业票：1699元/位（含餐）</br>
                 </p>
             </div>
-        </div>
-        <div class="row mb-4 align-items-md-stretch border-bottom justify-content-center">
-            <div class="col-6 col-md-2">
+        </div> -->
+        <div class="row mb-4 align-items-md-stretch border-bottom gx-md-5 gx-3">
+            <div class="col-6 col-md">
                 <img src="./media/visual-elements/Event photos-1.png" alt="" loading="lazy" style="width: 100%;">
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 col-md">
                 <img src="./media/visual-elements/Event photos-2.png" alt="" loading="lazy" style="width: 100%;">
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 col-md">
                 <img src="./media/visual-elements/Event photos-3.png" alt="" loading="lazy" style="width: 100%;">
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 col-md">
                 <img src="./media/visual-elements/Event photos-4.png" alt="" loading="lazy" style="width: 100%;">
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 col-md">
                 <img src="./media/visual-elements/Event photos-5.png" alt="" loading="lazy" style="width: 100%;">
             </div>
         </div>
@@ -139,24 +141,151 @@
         <div class="container py-4 ">
             <div class="row my-4">
                 <div class="col-md-12">
-                    <h2 class="text-center">精彩话题</h1>
-                        <p>RSGSH26
-                            大会精心策划了1个主会场、5个分会场、8-10个工作坊，内容涵盖业务敏捷与产品创新、大型组织的敏捷实践、AI大模型、数智化转型、领导力与个人修炼等多个领域，全方位满足不同行业、不同层级专业人士的需求。
-                            在主会场，您将有机会聆听国内外敏捷和AI领域的知名专家和行业翘楚的精彩演讲。他们将分享在各自领域的最新研究成果、成功案例以及对未来发展趋势的深刻洞察，为参会者带来一场思想的盛宴。
-                            分会场则更加聚焦于汽车、医药、金融、互联网、制造业等垂直细分行业的优秀实践经验，为参会者提供更深入的探讨和交流机会。</p>
+                    <h2 class="text-center text-white mb-4">精彩话题</h2>
                 </div>
             </div>
-            <div class="row mb-4 align-items-md-stretch">
-                <div class="col-md-12">
-                    <h2 class="text-center">大会组织团队</h2>
-                    <p>Product Owner: <a href="mailto:brenda.zhang2013@gmail.com">Brenda Zhang (CTC & CSAT)</a> </p>
-                    <p>Core Member: Cynthia Cheng (CSM)</p>
-                    <p>Agile Tour Community</p>
-                    <!-- <p style="text-align: center;"><img src="./media/大会出品人.png" alt="" style="width: 100%;"></p>     -->
+            <div class="row my-4">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p class="small">
+                        大会精心策划了1个主会场、4个分会场、10个工作坊，分享在金融、汽车、医药、制造业领域的最新研究成果、成功案例以及对未来发展趋势的深刻洞察。
+                    </p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row my-4">
+                <div class="col-md-3">
+                    <div class="card h-100 off-white bg-scrum-navy">
+                        <div class="card-body">
+                            <div class="mb-3"><img src="./media/visual-elements/Sample icons-5.png" style="width: 10%;">
+                            </div>
+                            <h5 class="card-title">业务敏捷与产品创新</h5>
+                            <p class="card-text small">探索如何在快速变化的市场环境中保持业务敏捷性，通过创新思维和敏捷实践推动产品持续进化。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 off-white bg-scrum-navy">
+                        <div class="card-body">
+                            <div class="mb-3"><img src="./media/visual-elements/Sample icons-1.png" style="width: 10%;">
+                            </div>
+                            <h5 class="card-title">大型组织敏捷实践</h5>
+                            <p class="card-text small">深入了解大型企业如何实施规模化敏捷，突破组织壁垒，实现跨部门高效协作。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 off-white bg-scrum-navy">
+                        <div class="card-body">
+                            <div class="mb-3"><img src="./media/visual-elements/Sample icons-2.png" style="width: 10%;">
+                            </div>
+                            <h5 class="card-title">AI大模型应用</h5>
+                            <p class="card-text small">探讨人工智能和大型语言模型如何赋能软件开发，提升团队效能和创新能力。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 off-white bg-scrum-navy">
+                        <div class="card-body">
+                            <div class="mb-3"><img src="./media/visual-elements/Sample icons-3.png" style="width: 10%;">
+                            </div>
+                            <h5 class="card-title">领导力与个人修炼</h5>
+                            <p class="card-text small">培养敏捷领导力，提升个人专业素养，在敏捷转型中发挥关键作用。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container bg-scrum-navy off-white">
+            <div class="container py-4 ">
+                <div class="row mb-4 align-items-md-stretch">
+                    <div class="col-md-12">
+                        <h2 class="text-center text-white mb-4">大会组织团队</h2>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card h-100 off-white bg-scrum-navy">
+                            <div class="card-body text-center">
+                                <div class="mb-3 rounded-circle bg-secondary d-inline-flex align-items-center justify-content-center"
+                                    style="width: 120px; height: 120px; font-size: 2rem;">
+                                    👤
+                                </div>
+                                <h5 class="card-title">Brenda Zhang</h5>
+                                <p class="card-text small mb-0">Product Owner</p>
+                                <p class="card-text small text-muted">CTC & CSAT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card h-100 off-white bg-scrum-navy">
+                            <div class="card-body text-center">
+                                <div class="mb-3 rounded-circle bg-secondary d-inline-flex align-items-center justify-content-center"
+                                    style="width: 120px; height: 120px; font-size: 2rem;">
+                                    👤
+                                </div>
+                                <h5 class="card-title">Cynthia Cheng</h5>
+                                <p class="card-text small mb-0">Core Member</p>
+                                <p class="card-text small text-muted">CSM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card h-100 off-white bg-scrum-navy">
+                            <div class="card-body text-center">
+                                <div class="mb-3 rounded-circle bg-secondary d-inline-flex align-items-center justify-content-center"
+                                    style="font-size: 2rem;">
+                                    <img src="./media/avatar/申导.png" style="width: 120px; height: 120px;">
+                                </div>
+                                <h5 class="card-title">Jacky Shen</h5>
+                                <p class="card-text small mb-0">Core Member</p>
+                                <p class="card-text small text-muted">CTC & CST</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card h-100 off-white bg-scrum-navy">
+                            <div class="card-body text-center">
+                                <div class="mb-3 rounded-circle bg-secondary d-inline-flex align-items-center justify-content-center"
+                                    style="font-size: 2rem;">
+                                    <img src="./media/avatar/Bill.png" style="width: 120px; height: 120px;">
+                                </div>
+                                <h5 class="card-title">Bill Li</h5>
+                                <p class="card-text small mb-0">Core Member</p>
+                                <p class="card-text small text-muted">CST</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card h-100 off-white bg-scrum-navy">
+                            <div class="card-body text-center">
+                                <div class="mb-3 rounded-circle bg-secondary d-inline-flex align-items-center justify-content-center"
+                                    style="width: 120px; height: 120px; font-size: 2rem;">
+                                    👤
+                                </div>
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text small mb-0">Core Member</p>
+                                <p class="card-text small text-muted">待定</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card h-100 off-white bg-scrum-navy">
+                            <div class="card-body text-center">
+                                <div class="mb-3 rounded-circle bg-secondary d-inline-flex align-items-center justify-content-center"
+                                    style="width: 120px; height: 120px; font-size: 2rem;">
+                                    👤
+                                </div>
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text small mb-0">Core Member</p>
+                                <p class="card-text small text-muted">待定</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="container py-4">
         <div class="row  my-4">
             <div class="col-md-12">
@@ -208,6 +337,12 @@
             </div>
             <div class="col-md-3">
                 <p style="text-align: center;">
+                    <img src="" class="img-fluid"
+                        style="padding: 1px; margin-top: 1%; width: 50%;">
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p style="text-align: center;">
                     <img src="./media/partners/视觉支持.png" class="img-fluid"
                         style="padding: 1px; margin-top: 1%; width: 50%;">
                 </p>
@@ -223,22 +358,22 @@
             <div class="col-md-12">
                 <h2 style="text-align: center; margin-top: 3%;">图书赞助</h2>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <p style="text-align: center;">
                     <img src="./media/partners/图书赞助-清华大学.png" class="img-fluid"
-                        style="padding: 1px; margin-top: 10%; width: 80%;">
+                        style="padding: 1px; margin-top: 10%; width: 50%;">
                 </p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <p style="text-align: center;">
                     <img src="./media/partners/图书赞助-机械工业出版社.png" class="img-fluid"
-                        style="padding: 1px; margin-top: 8%; width: 80%;">
+                        style="padding: 1px; margin-top: 8%; width: 50%;">
                 </p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <p style="text-align: center;">
                     <img src="./media/partners/电子工业出版社.png" class="img-fluid"
-                        style="padding: 1px; margin-top: 10%; width: 80%;">
+                        style="padding: 1px; margin-top: 10%; width: 50%;">
                 </p>
             </div>
         </div>
@@ -248,9 +383,7 @@
 
 
     <footer class="container-fluid">
-        <div class="row">
-            <img src="./media/visual-elements/City date banner.png" alt="">
-        </div>
+        <div class="scrolling-footer-banner bg-scrum-blue" style="height: 35px; overflow: hidden;"></div>
         <div class="container my-4">
             <div class="row">
                 <div class="col-md-2 text-center py-4">
@@ -317,6 +450,46 @@
     <!-- <script src="js/scripts.js"></script> -->
     <script>
         document.getElementById("theYear").innerText = new Date().getFullYear()
+
+        // Footer banner - scroll left with seamless loop
+        const footerTexts = ["SCRUM ALLIANCE®", "REGIONAL SCRUM GATHERING®", "SHANGHAI, CHINA", "12-13 SEPTEMBER 2026"];
+        const fullText = footerTexts.join('   ·   ');
+
+        const footerBanner = document.querySelector('.scrolling-footer-banner');
+
+        // Create multiple copies with connector between them
+        let content = '';
+        const copies = 3; // enough copies to fill screen
+        for (let i = 0; i < copies; i++) {
+            if (i === 0) {
+                content += '<span style="display: inline-block;">' + fullText + '</span>';
+            } else {
+                content += '<span style="display: inline-block;"> · ' + fullText + '</span>';
+            }
+        }
+
+        footerBanner.innerHTML = '<div class="scroll-content" style="color: white; font-size: 14px; white-space: nowrap; position: absolute; left: 0;">' + content + '</div>';
+
+        const scrollElement = footerBanner.querySelector('.scroll-content');
+        const firstSpan = scrollElement.querySelector('span');
+        const spanWidth = firstSpan.offsetWidth;
+
+        let position = 0;
+        const speed = 0.5;
+
+        function scroll() {
+            position -= speed;
+
+            // Loop: reset when we've moved exactly one span width
+            if (position <= -spanWidth) {
+                position = 0;
+            }
+
+            scrollElement.style.transform = 'translateX(' + position + 'px)';
+            requestAnimationFrame(scroll);
+        }
+
+        scroll();
     </script>
 </body>
 
