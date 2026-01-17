@@ -35,7 +35,7 @@
                     <a class="nav-link" href="./index.html">首页 | Home</a>
                     <a class="nav-link active" aria-current="page" href="./scrumalliance.html">官方联盟 | Scrum Alliance</a>
                     <a class="nav-link" href="./speeches.html">主题嘉宾 | Keynote</a>
-                    <a class="nav-link" href="./gallery.html">往年回顾 | Gallery</a>
+                    <a class="nav-link" href="./gallery.html">历年回顾 | Gallery</a>
                     <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">日程安排</a> -->
                     <!-- <div style="position: fixed; top: 10px; right: 80px; z-index: 1000;">
                     </div> -->
@@ -47,7 +47,7 @@
     <!-- 正文 -->
     <div class="container py-4">
         <div class="row mb-4 bg-light rounded-3">
-            <h1 style="text-align: center;">官方联盟 | Scrum Alliance</h1>
+            <h1 style="text-align: center;">敏捷官方机构</h1>
             <a href="https://www.scrumalliance.org/" style="text-align: center;"><img loading="lazy" alt="RSG-banner" src="./media/sa-logo/Color=Full Color, Size=Large@2x.png" style="width: 50%;"></a>
         </div>
         <div class="row align-items-md-stretch">
@@ -87,7 +87,7 @@
 
 
     <footer class="container-fluid">
-        <div class="scrolling-footer-banner bg-scrum-blue" style="height: 35px; overflow: hidden;"></div>
+        <div class="scrolling-footer-banner off-white bg-scrum-blue text-center small py-1" id="scrolling-footer-banner" style="height: 42px; overflow: hidden;"></div>
         <div class="container my-4">
             <div class="row">
                 <div class="col-md-2 text-center py-4">
@@ -112,9 +112,10 @@
                 <div class="col-md-2 text-center py-4" id="buy-ticket">
                     <h4>购票</h4>
                     <p>
-                        <img src="./media/RSGSH26互动吧购票.png" alt="" style="width: 200px;">
+                        <img src="./media/RSG公众号二维码.jpg" alt="" style="width: 150px;">
                     </p>
-                    <p>微信扫码或<a href="">点击链接</a>购票</p>
+                    <p>扫码或<a href="">点击链接</a>购票</p>
+                    <p>企业团购票（需开发票），请联系组委会</p>
                 </div>
                 <div class="col-md-2 text-center py-4">
                     <h4>资讯</h4>
@@ -125,11 +126,9 @@
                 </div>
                 <div class="col-md-2 text-center py-4">
                     <h4>联系</h4>
-                    <p>
+                    <p class="email small">
                         <b>Email:</b> <a href="mailto: brenda.zhang2013@gmail.com">brenda.zhang2013@gmail.com</a>
                     </p>
-                    <p>🇬🇧If you're from outside China, please email us to buy ticket and get assisted</p>
-                    <p>如需企业团购票（需开发票），请联系组委会</p>
                 </div>
             </div>
             <div class="row">
@@ -146,50 +145,12 @@
 
 
     <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
     <!-- <script src="js/scripts.js"></script> -->
     <script>
         document.getElementById("theYear").innerText = new Date().getFullYear()
-
-        // Footer banner - scroll left with seamless loop
-        const footerTexts = ["SCRUM ALLIANCE®", "REGIONAL SCRUM GATHERING®", "SHANGHAI, CHINA", "12-13 SEPTEMBER 2026"];
-        const fullText = footerTexts.join('   ·   ');
-
-        const footerBanner = document.querySelector('.scrolling-footer-banner');
-
-        // Create multiple copies with connector between them
-        let content = '';
-        const copies = 3; // enough copies to fill screen
-        for (let i = 0; i < copies; i++) {
-            if (i === 0) {
-                content += '<span style="display: inline-block;">' + fullText + '</span>';
-            } else {
-                content += '<span style="display: inline-block;"> · ' + fullText + '</span>';
-            }
-        }
-
-        footerBanner.innerHTML = '<div class="scroll-content" style="color: white; font-size: 14px; white-space: nowrap; position: absolute; left: 0;">' + content + '</div>';
-
-        const scrollElement = footerBanner.querySelector('.scroll-content');
-        const firstSpan = scrollElement.querySelector('span');
-        const spanWidth = firstSpan.offsetWidth;
-
-        let position = 0;
-        const speed = 0.5;
-
-        function scroll() {
-            position -= speed;
-
-            // Loop: reset when we've moved exactly one span width
-            if (position <= -spanWidth) {
-                position = 0;
-            }
-
-            scrollElement.style.transform = 'translateX(' + position + 'px)';
-            requestAnimationFrame(scroll);
-        }
-
-        scroll();
+        document.getElementById("scrolling-footer-banner").innerText = ["SCRUM ALLIANCE®", "REGIONAL SCRUM GATHERING®", "SHANGHAI, CHINA", "12-13 SEPTEMBER 2026"].join(' · ');
     </script>
 </body>
 
