@@ -1001,3 +1001,35 @@ td
 	font-family:微软雅黑, sans-serif;
 	mso-font-charset:134;
 	border:.5pt solid windowtext;}
+
+.scrum-navy {
+	color: #182340;
+}
+.scrum-blue {
+	color: #375EDF;
+}
+.light-blue {
+	color: #A4D5EB;
+}
+.gray {
+	color: #D1D3D9;
+}
+.off-white {
+	color: #F3F3F3;
+}
+
+.scrum-navy-bg {
+	background-color: #182340;
+}
+.scrum-blue-bg {
+	background-color: #375EDF;
+}
+.light-blue-bg {
+	background-color: #A4D5EB;
+}
+.gray-bg {
+	background-color: #D1D3D9;
+}
+.off-white-bg {
+	background-color: #F3F3F3;
+}
