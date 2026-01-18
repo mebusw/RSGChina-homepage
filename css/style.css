@@ -1033,3 +1033,9 @@ td
 .bg-off-white {
 	background-color: #F3F3F3;
 }
+
+.single-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
